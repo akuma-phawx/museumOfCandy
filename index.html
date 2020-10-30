@@ -73,7 +73,7 @@
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 class="d-none d-lg-inline"
@@ -92,12 +92,9 @@
       </div>
       <!-- another row -->
       <div class="row align-items-center content">
-        <div class="col-md-6 order-2 order-md-1">
-          <img class="img-fluid" src="imgs/milk.png" alt="" />
-        </div>
-        <div class="col-md-6 text-center order-1 order-md-2">
+        <div class="col-md-6 text-center">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 class="d-none d-lg-inline"
@@ -113,15 +110,18 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="imgs/gumball.png" alt="" />
+        </div>
       </div>
       <!-- another row -->
       <div class="row align-items-center content">
         <div class="col-md-6 order-2 order-md-1">
-          <img class="img-fluid" src="imgs/milk.png" alt="" />
+          <img class="img-fluid" src="imgs/sprinkles.png" alt="" />
         </div>
         <div class="col-md-6 text-center order-1 order-md-2">
           <div class="row justify-content-center">
-            <div class="col-10 col-lg-8 blurb">
+            <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
               <h2>MUSEUM OF CANDY</h2>
               <img
                 class="d-none d-lg-inline"
@@ -155,5 +155,14 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavBar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>

@@ -4,7 +4,7 @@ body {
 }
 
 #mainNavBar {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 100;
 }
 
@@ -55,7 +55,7 @@ body {
 }
 
 .navbar.scrolled {
-  background: rgb(222, 192, 222);
+  background: #E4BEE0;
   transition: background 1s;
 }
 
